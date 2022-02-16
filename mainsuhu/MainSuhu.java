@@ -23,7 +23,7 @@ for(String ulang="y";ulang.equals("y")||ulang.equals("Y");){
         System.out.println("----------");
         do{
         System.out.print("Masukan Suhu Dalam Celcius\t: ");
-        float suhu = scan.nextFloat();
+        Double suhu = scan.nextDouble();
         do{
         System.out.println("\n Opsi");
         System.out.println("----");
@@ -33,19 +33,19 @@ for(String ulang="y";ulang.equals("y")||ulang.equals("Y");){
         System.out.print("pilih\t: ");
         pilih=scan.nextInt();
         if(pilih==1){
-        Float suhu1 = konversiSuhu.CelciusFahrenheit(suhu);
+        Double suhu1 = konversiSuhu.CelciusFahrenheit(suhu);
         System.out.println("Celcius Ke Fahrenheit\t: " + suhu1);
 
   
-        Float suhu2 = konversiSuhu.FahrenheitKelvin(suhu1);
+        Double suhu2 = konversiSuhu.FahrenheitKelvin(suhu1);
         System.out.println("Fahrenheit Ke Kelvin\t: " + suhu2);
 
         
-        Float suhu3 = konversiSuhu.KelvinReamur(suhu2);
+        Double suhu3 = konversiSuhu.KelvinReamur(suhu2);
         System.out.println("Kelvin Ke Reamur\t: " + suhu3);
 
        
-        Float suhu4 = konversiSuhu.RearmurCelcius(suhu3);
+        Double suhu4 = konversiSuhu.RearmurCelcius(suhu3);
         System.out.println("Reamur Ke Celcius\t: " + suhu4);
         
        
