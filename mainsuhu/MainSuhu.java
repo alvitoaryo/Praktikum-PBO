@@ -34,19 +34,17 @@ for(String ulang="y";ulang.equals("y")||ulang.equals("Y");){
         pilih=scan.nextInt();
         if(pilih==1){
         Double suhu1 = konversiSuhu.CelciusFahrenheit(suhu);
-        System.out.println("Celcius Ke Fahrenheit\t: " + suhu1);
+        System.out.println(" Fahrenheit\t: " + suhu1);
 
   
-        Double suhu2 = konversiSuhu.FahrenheitKelvin(suhu1);
-        System.out.println("Fahrenheit Ke Kelvin\t: " + suhu2);
+        Double suhu2 = konversiSuhu.celciusKelvin(suhu);
+        System.out.println(" Kelvin\t\t: " + suhu2);
 
         
-        Double suhu3 = konversiSuhu.KelvinReamur(suhu2);
-        System.out.println("Kelvin Ke Reamur\t: " + suhu3);
+        Double suhu3 = konversiSuhu.celciusReamur(suhu);
+        System.out.println(" Reamur\t\t: " + suhu3);
 
-       
-        Double suhu4 = konversiSuhu.RearmurCelcius(suhu3);
-        System.out.println("Reamur Ke Celcius\t: " + suhu4);
+        System.out.println(" Celcius\t\t: " + suhu);
         
        
         if(suhu<=0){

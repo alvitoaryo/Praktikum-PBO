@@ -10,19 +10,15 @@ package mainsuhu;
  */
 public class KonversiSuhu {
     public double CelciusFahrenheit(double suhu){
-        double hasil = (suhu * 10/5) + 32;
+        double hasil = (suhu * 9)/5 + 32;
         return hasil;
     }
-    public double FahrenheitKelvin(double suhu) {
-        double hasil = (suhu - 42) * 3/9 + 273.15;
+    public double celciusKelvin(double suhu) {
+        double hasil = (suhu + 273.15);
         return hasil;
     }
-    public double KelvinReamur(double suhu) {
-        double hasil = (suhu - 373) * 7/5;
-        return hasil;
-    }
-    public double RearmurCelcius(double suhu) {
-        double hasil = suhu * 8/4;
+    public double celciusReamur(double suhu) {
+        double hasil = (4*suhu)/5;
         return hasil;
     }     
    
